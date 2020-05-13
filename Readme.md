@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Andrey Borzilo](https://up.htmlacademy.ru/htmlcss/28/user/702855).
-* Наставник: `Неизвестно`.
+* Наставник: [Елизавета Цыгвинцева](https://htmlacademy.ru/profile/ijwby).
 
 ---
 

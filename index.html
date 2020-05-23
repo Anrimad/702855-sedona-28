@@ -27,18 +27,18 @@
       </nav>
     </header>
     <main>
-      <h1>Городок Седона</h1>
+      <h1 class="visually-hidden">Городок Седона</h1>
       <section>
         <h2>Добро пожаловать в Седона</h2>
-        <img src="img/sedona-welcome.svg" alt="Картинка приветствия" width="458" height="352">
+        <img src="img/sedona-welcome.svg" alt="Welcome to the Sedona 'Because the Grand Canyon State sucks'" width="458" height="352">
       </section>
       <section>
-        <h2>О городке Седона</h2>
+        <h2 class="visually-hidden">О городке Седона</h2>
         <p>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <section>
-        <h2>Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <ul>
           <li>
             <div>
@@ -73,51 +73,80 @@
           <li>
             <h3>Небольшая<br> площадь</h3>
             <p>— №3 —</p>
-            <p>все достопримечательности<br> находятся очень близко</p>
+            <p>Все достопримечательности<br> находятся очень близко</p>
           </li>
           <li>
             <h3>Красивая<br> дорога</h3>
             <p>— №4 —</p>
-            <p>ехать в седону из лас-вегаса совсем<br> не скучно!</p>
+            <p>Ехать в седону из лас-вегаса совсем<br> не скучно!</p>
           </li>
           <li>
             <h3>Мало<br> туристов</h3>
             <p>— №5 —</p>
-            <p>большинство едет в гранд каньон<br> и толпится там</p>
+            <p>Большинство едет в гранд каньон<br> и толпится там</p>
           </li>
         </ul>
       </section>
       <section>
-        <h2>Поиск гостиницы</h2>
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button type="button">Поиск гостиницы в Седоне</button>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Форма поиска гостиницы</h2>
+        <form action="https://echo.htmlacademy.ru" method="GET">
+          <p>
+            <label for="date-arrival">Дата заезда:</label>
+            <input type="text" id="date-arrival" name="date-arrival" placeholder="24 апреля 2017">
+          </p>
+          <p>
+            <label for="date-leaving">Дата выезда:</label>
+            <input type="text" id="date-leaving" name="date-leaving" placeholder="4 июля 2017">
+          </p>
+          <div>
+            <p>
+              <label for="adult">Взрослые:</label>
+              <button type="button" aria-label="adult-less">-</button>
+              <input type="text" id="adult" name="adult" placeholder="2">
+              <button type="button" aria-label="adult-more">+</button>
+            </p>
+            <p>
+              <label for="kids">Дети:</label>
+              <button type="button" aria-label="kids-less">-</button>
+              <input type="text" id="kids" name="kids" placeholder="0">
+              <button type="button" aria-label="kids-more">+</button>
+            </p>
+          </div>
+          <button type="submit">Найти</button>
+        </form>
       </section>
     </main>
     <footer>
       <section>
-        <h2>Как добраться</h2>
+        <h2 class="visually-hidden">Как добраться</h2>
         <img src="img/sedona-map.jpg" alt="Карта" width="1199" height="594">
       </section>
       <section>
-        <h2>
+        <h2 class="visually-hidden">
           Связь с нами
         </h2>
         <p>#visitsedona</p>
         <a href="tel:+74956660166">Тел: +7(495) 666-01-66</a>
       </section>
       <section>
-        <h2>Давайте дружить</h2>
+        <h2 class="visually-hidden">Давайте дружить</h2>
         <ul>
-          <li><a href="#">twitter</a></li>
-          <li><a href="#">facebook</a></li>
-          <li><a href="#">youtube</a></li>
+          <li><a href="#" aria-label="twitter"></a></li>
+          <li><a href="#" aria-label="facebook"></a></li>
+          <li><a href="#" aria-label="youtube"></a></li>
         </ul>
       </section>
       <section>
-        <h2>Разработано</h2>
+        <h2 class="visually-hidden">Разработано</h2>
         <p>
-          website by <a href="https://htmlacademy.ru/">
-            <img src="img/htmlacademy-logo.svg" alt="Логотип академии" width="115" height="41">
+          website by <a href="https://htmlacademy.ru/" aria-label="На главную академии">
+            <img src="img/htmlacademy-logo.svg" width="115" height="41">
           </a>
         </p>
       </section>

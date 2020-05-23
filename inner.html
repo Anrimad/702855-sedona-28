@@ -21,25 +21,74 @@
             <a href="">Гостиницы</a>
           </li>
         </ul>
-        <a href="index.html">
+        <a href="index.html" aria-label="На главную страницу">
           <img src="img/sedona-logo.svg" alt="Логотип City of Cedona" width="138" height="70">
         </a>
       </nav>
     </header>
     <main>
-      <h1>Отели</h1>
+      <h1 class="visually-hidden">Отели</h1>
       <section>
-        <h2>Фильтр отелей</h2>
+        <h2 class="visually-hidden">Фильтр отелей</h2>
+        <form action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <label for="pool">
+              <input type="checkbox" name="pool" id="pool" checked>
+              Бассейн
+            </label>
+            <label for="parking">
+              <input type="checkbox" name="parking" id="parking">
+              Парковка
+            </label>
+            <label for="wifi">
+              <input type="checkbox" name="wifi" id="wifi">
+              Wi-Fi
+            </label>
+          </fieldset>
+  
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <label for="hotel">
+              <input type="checkbox" name="hotel" id="hotel" checked>
+              Гостиница
+            </label>
+            <label for="motel">
+              <input type="checkbox" name="motel" id="motel" checked>
+              Мотель
+            </label>
+            <label for="apartments">
+              <input type="checkbox" name="apartments" id="apartments" checked>
+              Апартаменты
+            </label>
+          </fieldset>
+  
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <p>
+              <label for="initial-cost">
+                от <input type="text" id="initial-cost" name="initial-cost" aria-label="Минимальная цена" placeholder="0"> 
+              </label>
+              <label for="maximum-cost">
+                до <input type="text" id="maximum-cost" name="maximum-cost" aria-label="Максимальная цена" placeholder="3000"> 
+              </label>
+            </p>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Сортировка отелей</h2>
         <p>Найдено:3</p>
         <p>Сортировка:</p>
         <ul>
-          <li><a href="">По цене</a></li>
-          <li><a href="">По типу</a></li>
-          <li><a href="">По рейтингу</a></li>
+          <li><button type="button">По цене</button></li>
+          <li><button type="button">По типу</button></li>
+          <li><button type="button">По рейтингу</button></li>
         </ul>
       </section>
       <section>
-        <h2>Список отелей</h2>
+        <h2 class="visually-hidden">Список отелей</h2>
         <ul>
           <li>
             <img src="img/Amara Resort & Spa.jpg" alt="Гостиница Amara resort and spa" width="135" height="90">
@@ -106,21 +155,21 @@
     </main>
     <footer>
       <section>
-        <h2>Связь с нами</h2>
+        <h2 class="visually-hidden">Связь с нами</h2>
         <p>#visitsedona</p>
         <a href="tel:+74956660166">Тел: +7(495) 666-01-66</a>
       </section>
       <section>
-        <h2>Давайте дружить</h2>
+        <h2 class="visually-hidden">Давайте дружить</h2>
         <ul>
-          <li><a href="#">twitter</a></li>
-          <li><a href="#">facebook</a></li>
-          <li><a href="#">youtube</a></li>
+          <li><a href="#" aria-label="twitter"></a></li>
+          <li><a href="#" aria-label="facebook"></a></li>
+          <li><a href="#" aria-label="youtube"></a></li>
         </ul>
       </section>
       <section>
-        <h2>Разработано</h2>
-        <p>website by <a href="https://htmlacademy.ru/">
+        <h2 class="visually-hidden">Разработано</h2>
+        <p>website by  <a href="https://htmlacademy.ru/" aria-label="На главную академии">
             <img src="img/htmlacademy-logo.svg" alt="Логотип академии" width="115" height="41">
           </a>
         </p>

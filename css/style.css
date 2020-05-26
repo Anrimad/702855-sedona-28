@@ -3,16 +3,58 @@
     font-style: normal;
     font-weight: 400;
     src: local('PT Sans'), local('PTSans-Regular'),
-         url('fonts/pt-sans-v11-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/pt-sans-v11-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
-  }
+        url('fonts/pt-sans-v11-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('fonts/pt-sans-v11-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+}
 
-  /* pt-sans-700 - latin_cyrillic */
-  @font-face {
+@font-face {
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
     src: local('PT Sans Bold'), local('PTSans-Bold'),
-    url('fonts/pt-sans-v11-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
-    url('fonts/pt-sans-v11-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
-  }
+        url('fonts/pt-sans-v11-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+        url('fonts/pt-sans-v11-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+}
+
+/* global */
+
+:root {
+    --basic-black: #000000;
+    --basic-white: #FFFFFF;
+    --basic-extra-light: #F2F2F2;
+    --basic-light: #EEEEEE;
+    --basic-gray: #888888;
+    --basic-dimgray: #666666;
+    --basic-dark-gray: #333333;
+    --basic-blue: #81B3D2;
+    --basic-brown: #766357;
+
+    --neutral-light-blue: #669EC0;
+    --neutral-dark-blue: #5496BD;
+    --neutral-light-brown: #604E43;
+    --neutral-dark-brown: #503E33;
+}
+
+body {
+    min-width: 1200px; 
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    color: var(--basic-black);
+    background-color: var(--basic-extra-light);
+    text-transform: uppercase;
+}
+
+a { 
+    text-decoration: none; 
+}
+
+img { 
+    max-width: 100%;
+    height: auto;
+}
+
+

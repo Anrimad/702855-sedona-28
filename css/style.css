@@ -16,7 +16,9 @@
         url('fonts/pt-sans-v11-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
 }
 
-/* global */
+
+
+/* Global */
 
 :root {
     --basic-black: #000000;
@@ -57,7 +59,6 @@ img {
     height: auto;
 }
 
-
 .visually-hidden {
     position: absolute;
     width: 1px; 
@@ -67,4 +68,192 @@ img {
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.button {
+    font: inherit;
+    text-align: center;
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--basic-blue);
+    border: none;
+}
+
+
+
+/* Header */
+
+.header {
+    background-color: var(--basic-white);
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-menu a {
+    color: var(--basic-black);
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus {
+    color: var(--basic-blue);
+}
+
+.nav-menu a:active {
+    color: var(--basic-black);
+}
+
+.nav-menu a.active-link {
+    color: var(--basic-brown);
+}
+
+
+
+/* Main */
+/* Welcome */
+
+.welcome {
+    text-align: center;
+    background: url('../img/sedona-background.jpg') no-repeat center;
+}
+
+
+
+/* About */
+
+.about {
+    text-align: center;
+    background-color: var(--basic-white);
+}
+
+.about-slogan {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.about-text {
+    margin-top: 42px;
+    color: var(--basic-dark-gray);
+}
+
+
+
+/* Advantages */
+
+.advantages-content {
+    list-style: none;
+}
+
+.content-list {
+    text-align: center;
+}
+
+.content-list .list-box {
+    line-height: 21px;
+    color: var(--basic-white);
+    background-color: var(--basic-blue);
+}
+
+.content-list h3 {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.content-list:not(.content-list--blue) {
+    background-color: var(--basic-light);
+}
+
+.content-list:not(.content-list--blue) .content-list-desc {
+    line-height: 21px;
+    color: var(--basic-dark-gray);
+}
+
+.content-sublist {
+    list-style: none;
+}
+
+.sublist-elem p{
+    line-height: 21px;
+    color: var(--basic-dark-gray);
+}
+
+
+
+/* Search */
+.search {
+    text-align: center;
+    background-color: var(--basic-white);
+}
+
+.search-caption {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.search-text {
+    color: var(--basic-dark-gray);
+}
+
+.search-button {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    color: var(--basic-white);
+    background-color: var(--basic-brown);
+}
+
+.search-button:hover,
+.search-button:focus {
+    background-color: var(--neutral-light-brown);
+}
+
+.search-button:active {
+    background-color: var(--neutral-dark-brown);
+}
+
+
+
+/* Search form */
+.search-form {
+    display: none;
+}
+
+
+
+/* Footer */
+
+/* Collback */
+
+.callback p,
+.callback a {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    color: var(--basic-black);
+}
+
+
+
+/* Socials */
+
+.socials {
+    text-align: center;
+}
+
+.socials ul {
+    list-style: none;
+}
+
+
+
+/* Developed */
+
+.developed {
+    text-align: center;
 }

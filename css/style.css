@@ -102,10 +102,12 @@ img {
 .nav-menu a:hover,
 .nav-menu a:focus {
     color: var(--basic-blue);
+    outline: none;
 }
 
 .nav-menu a:active {
     color: var(--basic-black);
+    opacity: 0.3;
 }
 
 .nav-menu a.active-link {
@@ -256,4 +258,119 @@ img {
 
 .developed {
     text-align: center;
+}
+
+
+
+/* Inner page */
+
+/* Filter */
+.filter {
+    background: url('../img/filter-background.jpg') no-repeat center;
+}
+
+
+
+/* sort */
+
+.found {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+.sort-caption {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.sort ul {
+    list-style: none;
+}
+
+.type-button {
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--basic-black);
+    background-color: transparent;
+    opacity: 0.3;
+}
+
+.type-button:hover,
+.type-button:focus {
+    color: var(--basic-blue);
+    border-bottom: dashed 1px var(--basic-blue);
+    outline: none;
+}
+
+.type-button:active {
+    color: var(--basic-black);
+    border-bottom: none;
+    opacity: 1;
+}
+
+
+.type-button .type-button--active {
+    color: var(--basic-blue);
+}
+
+
+
+/* Hotels */
+
+.hotels-list {
+    list-style: none;
+}
+
+.hotels-link {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    color: var(--basic-black);
+}
+
+.hotels-link:hover,
+.hotels-link:focus {
+    color: var(--basic-blue);
+    outline: none;
+}
+
+.hotels-link:active {
+    opacity: 0.3;
+}
+
+.hotels-about-type,
+.hotels-cost {
+    line-height: 21px;
+}
+
+.hotels-about-link {
+    font-weight: bold;
+    line-height: 21px;
+}
+
+.hotels-about-link:hover,
+.hotels-about-link:focus {
+    background-color: var(--neutral-light-blue);
+    outline: none;
+}
+
+.hotels-about-link:active {
+    background-color: var(--neutral-dark-blue);
+}
+
+.hotels-order {
+    font-weight: bold;
+    line-height: 21px;
+    background-color: var(--basic-brown);
+}
+
+.hotels-order:hover,
+.hotels-order:focus {
+    background-color: var(--neutral-light-brown);
+    outline: none;
+}
+
+.hotels-order:active {
+    background-color: var(--neutral-dark-brown);
 }

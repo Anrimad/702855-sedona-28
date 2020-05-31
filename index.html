@@ -7,28 +7,30 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header">
-      <nav class="header-nav">
-        <ul class="nav-menu">
-          <li>
-            <a href="">Информация</a>
-          </li>
-          <li>
-            <a href="">Фото и видео</a>
-          </li>
-          <li>
-            <a href="">Карта штата</a>
-          </li>
-          <li>
-            <a href="inner.html">Гостиницы</a>
-          </li>
-        </ul>
-        <a class="header-logo">
-          <img src="img/sedona-logo.svg" alt="Логотип City of Cedona" width="138" height="70">
-        </a>
-      </nav>
-    </header>
-    <main>
+    <div class="container">
+      <header class="header">
+        <nav class="header-nav">
+          <ul class="nav-menu">
+            <li>
+              <a href="">Информация</a>
+            </li>
+            <li>
+              <a href="">Фото и видео</a>
+            </li>
+            <li>
+              <a href="">Карта штата</a>
+            </li>
+            <li>
+              <a href="inner.html">Гостиницы</a>
+            </li>
+          </ul>
+          <a class="header-logo">
+            <img src="img/sedona-logo.svg" alt="Логотип City of Cedona" width="138" height="70">
+          </a>
+        </nav>
+      </header>
+    </div>
+    <main class="container">
       <h1 class="visually-hidden">Городок Седона</h1>
       <section class="welcome">
         <h2 class="visually-hidden">Добро пожаловать в Седона</h2>
@@ -124,32 +126,34 @@
         </form>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="container">
       <section class="map">
         <h2 class="visually-hidden">Как добраться</h2>
         <img src="img/sedona-map.jpg" alt="Карта" width="1199" height="594">
       </section>
-      <section class="callback">
-        <h2 class="visually-hidden">Связь с нами</h2>
-        <p>#visitsedona</p>
-        <a href="tel:+74956660166">Тел: +7(495) 666-01-66</a>
-      </section>
-      <section class="socials">
-        <h2 class="visually-hidden">Давайте дружить</h2>
-        <ul>
-          <li class="social-elem"><a href="#" aria-label="twitter"></a></li>
-          <li class="social-elem"><a href="#" aria-label="facebook"></a></li>
-          <li class="social-elem"><a href="#" aria-label="youtube"></a></li>
-        </ul>
-      </section>
-      <section class="developed">
-        <h2 class="visually-hidden">Разработано</h2>
-        <p>
-          website by <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="На страницу интенсива академии">
-            <img src="img/htmlacademy-logo.svg" alt="Логотип академии" width="115" height="41">
-          </a>
-        </p>
-      </section>
+      <div class="footer-content">
+        <section class="callback">
+          <h2 class="visually-hidden">Связь с нами</h2>
+          <p>#visitsedona</p>
+          <a href="tel:+74956660166">Тел: +7(495) 666-01-66</a>
+        </section>
+        <section class="socials">
+          <h2 class="visually-hidden">Давайте дружить</h2>
+          <ul>
+            <li class="social-elem"><a href="#" aria-label="twitter"></a></li>
+            <li class="social-elem"><a href="#" aria-label="facebook"></a></li>
+            <li class="social-elem"><a href="#" aria-label="youtube"></a></li>
+          </ul>
+        </section>
+        <section class="developed">
+          <h2 class="visually-hidden">Разработано</h2>
+          <p>
+            website by <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="На страницу интенсива академии">
+              <img src="img/htmlacademy-logo.svg" alt="Логотип академии" width="115" height="41">
+            </a>
+          </p>
+        </section>
+      </div>
     </footer>
   </body>
 </html>

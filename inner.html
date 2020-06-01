@@ -7,28 +7,28 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header">
-      <nav class="header-nav">
-        <ul class="nav-menu">
-          <li>
-            <a href="">Информация</a>
-          </li>
-          <li>
-            <a href="">Фото и видео</a>
-          </li>
-          <li>
-            <a href="">Карта штата</a>
-          </li>
-          <li>
-            <a class="active-link" href="">Гостиницы</a>
-          </li>
-        </ul>
-        <a class="header-logo" href="index.html" aria-label="На главную страницу">
-          <img src="img/sedona-logo.svg" alt="Логотип City of Cedona" width="138" height="70">
-        </a>
-      </nav>
-    </header>
-    <main>
+      <header class="container">
+        <nav class="header-nav">
+          <ul class="nav-menu">
+            <li>
+              <a href="">Информация</a>
+            </li>
+            <li>
+              <a href="">Фото и видео</a>
+            </li>
+            <li>
+              <a href="">Карта штата</a>
+            </li>
+            <li>
+              <a class="active-link" href="">Гостиницы</a>
+            </li>
+          </ul>
+          <a class="header-logo" href="index.html" aria-label="На главную страницу">
+            <img src="img/sedona-logo.svg" alt="Логотип City of Cedona" width="138" height="70">
+          </a>
+        </nav>
+      </header>
+    <main class="container">
       <h1 class="visually-hidden">Отели</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр отелей</h2>
@@ -81,7 +81,7 @@
       </section>
       <section class="sort">
         <h2 class="visually-hidden">Сортировка отелей</h2>
-        <p class="found">Найдено:3</p>
+        <p class="found">Найдено: 3</p>
         <p class="sort-caption">Сортировка:</p>
         <ul>
           <li class="sort-type"><button class="button type-button type-button--active" type="button">По цене</button></li>
@@ -98,7 +98,7 @@
         <ul class="hotels-list">
           <li class="hotels-elem">
             <img src="img/Amara_Resort_&_Spa.jpg" alt="Гостиница Amara resort and spa" width="135" height="90">
-            <div>
+            <div class="hotels-data">
               <h3>
                 <a class="hotels-link" href="">Amara resort & spa</a>
               </h3>
@@ -115,12 +115,12 @@
             </div>
             <div class="hotels-rating">
               <span></span>
-              <p>рейтинг:8,5</p>
+              <p>рейтинг: 8,5</p>
             </div>
           </li>
           <li class="hotels-elem">
             <img src="img/Desert_Quail_Inn.jpg" alt="Мотель Desert Quail Inn" width="135" height="90">
-            <div>
+            <div class="hotels-data">
               <h3>
                 <a class="hotels-link" href="">Desert Quail Inn</a>
               </h3>
@@ -137,12 +137,12 @@
             </div>
             <div class="hotels-rating">
               <span></span>
-              <p>рейтинг:8,9</p>
+              <p>рейтинг: 8,9</p>
             </div>
           </li>
           <li class="hotels-elem">
             <img src="img/Villas_at_Poco_Diablo.jpg" alt="Апартаменты Villas at Poco Diablo" width="135" height="90">
-            <div>
+            <div class="hotels-data">
               <h3>
                 <a class="hotels-link" href="">Villas at Poco Diablo</a>
               </h3>
@@ -159,34 +159,36 @@
             </div>
             <div class="hotels-rating">
               <span></span>
-              <p>рейтинг:9,2</p>
+              <p>рейтинг: 9,2</p>
             </div>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="footer">
-      <section class="callback">
-        <h2 class="visually-hidden">Связь с нами</h2>
-        <p>#visitsedona</p>
-        <a href="tel:+74956660166">Тел: +7(495) 666-01-66</a>
-      </section>
-      <section class="socials">
-        <h2 class="visually-hidden">Давайте дружить</h2>
-        <ul>
-          <li class="social-elem"><a href="#" aria-label="twitter"></a></li>
-          <li class="social-elem"><a href="#" aria-label="facebook"></a></li>
-          <li class="social-elem"><a href="#" aria-label="youtube"></a></li>
-        </ul>
-      </section>
-      <section class="developed">
-        <h2 class="visually-hidden">Разработано</h2>
-        <p>
-          website by <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="На страницу интенсива академии">
-            <img src="img/htmlacademy-logo.svg" alt="Логотип академии" width="115" height="41">
-          </a>
-        </p>
-      </section>
+    <footer class="container">
+      <div class="footer-content">
+        <section class="callback">
+          <h2 class="visually-hidden">Связь с нами</h2>
+          <p>#visitsedona</p>
+          <a href="tel:+74956660166">Тел: +7(495) 666-01-66</a>
+        </section>
+        <section class="socials">
+          <h2 class="visually-hidden">Давайте дружить</h2>
+          <ul>
+            <li class="social-elem"><a href="#" aria-label="twitter"></a></li>
+            <li class="social-elem"><a href="#" aria-label="facebook"></a></li>
+            <li class="social-elem"><a href="#" aria-label="youtube"></a></li>
+          </ul>
+        </section>
+        <section class="developed">
+          <h2 class="visually-hidden">Разработано</h2>
+          <p>
+            website by <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="На страницу интенсива академии">
+              <img src="img/htmlacademy-logo.svg" alt="Логотип академии" width="115" height="41">
+            </a>
+          </p>
+        </section>
+      </div>
     </footer>
   </body>
 </html>

@@ -53,10 +53,7 @@ html {
 }
 
 body {
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
-    min-height: 100%; 
-    margin: 0 auto;
+    height: 100%; 
     padding: 0 10px;
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 14px;
@@ -78,6 +75,15 @@ img {
 
 * {
     box-sizing: border-box;
+}
+
+.page {
+    width: 1200px;
+    min-height: 100%; 
+    margin: 0 auto;
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
 }
 
 .visually-hidden {
@@ -103,10 +109,7 @@ img {
 
 .container {
     position: relative;
-    width: 1200px;
-    margin: 0 auto;
     background-color: var(--basic-white);
-    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
   
 
@@ -207,14 +210,14 @@ img {
 .about {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
     background-color: var(--basic-white);
 }
 
 .about-slogan {
+    width: 470px;
+    margin: 0 auto;
     margin-top: 42px;
-    margin-bottom: 0;
     font-size: 21px;
     font-weight: 700;
 }
@@ -248,12 +251,14 @@ img {
     flex-direction: column;
     width: 400px;
     min-height: 256px;
+    padding: 0 49px;
     line-height: 21px;
     color: var(--basic-white);
     background-color: var(--basic-blue);
 }
 
 .content-list h3 {
+    padding: 0 50px;
     margin-top: 47px;
     margin-bottom: 25px;
     font-size: 21px;
@@ -277,6 +282,7 @@ img {
     width: calc(100% / 3);
     min-height: 256px;
     flex-direction: column;
+    padding: 0 71px;
     background-color: var(--basic-light);
 }
 
@@ -295,6 +301,7 @@ img {
 
 .sublist-elem {
     flex-basis: calc(100% / 3);
+    padding: 0 50px;
 }
 
 .sublist-elem h3 {
@@ -315,6 +322,7 @@ img {
 .search {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     background-color: var(--basic-white);
 }
@@ -328,6 +336,7 @@ img {
 }
 
 .search-text {
+    width: 435px;
     margin-top: 35px;
     margin-bottom: 0;
     line-height: 24px;
@@ -576,6 +585,7 @@ img {
 }
 
 .hotels-link:active {
+    color: var(--basic-black);
     opacity: 0.3;
 }
 
@@ -615,6 +625,7 @@ img {
 
 .hotels-about-link:active {
     background-color: var(--neutral-dark-blue);
+    color: rgba(255,255,255, 0.3);
 }
 
 
@@ -626,6 +637,7 @@ img {
 
 .hotels-order:active {
     background-color: var(--neutral-dark-brown);
+    color: rgba(255,255,255, 0.3);
 }
 
 .hotels-rating {

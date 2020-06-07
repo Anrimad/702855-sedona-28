@@ -308,12 +308,35 @@ img {
 }
 
 .sublist-elem {
+    position: relative;
     flex-basis: calc(100% / 3);
     padding: 0 50px;
+    padding-top: 160px;
+}
+
+.sublist-elem::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 75px;
+    height: 77px;
+    margin-left: -38px;
+    margin-top: 60px;
+}
+
+.sublist-elem:first-child::before {
+    content: url(../img/house.svg);
+}
+.sublist-elem:nth-child(2):before {
+    content: url(../img/burger.svg);
+}
+.sublist-elem:last-child::before {
+    content: url(../img/present.svg);
 }
 
 .sublist-elem h3 {
-    margin-top: 28px;
+    margin-top: 0;
     margin-bottom: 25px;
 }
 
@@ -409,10 +432,12 @@ img {
     right: 9px;
     padding: 0;
     border: none;
+    outline: none;
     background: transparent;
 }
 
-.button-calendar:hover path {
+.button-calendar:hover path,
+.button-calendar:focus path {
     fill: var(--basic-black);
 }
 .button-calendar:active path {
@@ -486,11 +511,14 @@ img {
     min-width: 39px;
     padding: 0;
     border: none;
+    outline: none;
     background-color: var(--basic-extra-light);
 }
 
 .button-control:hover path, 
-.button-control:hover rect {
+.button-control:hover rect,
+.button-control:focus path,
+.button-control:focus rect {
     fill: var(--basic-black);
 }
 
@@ -598,6 +626,7 @@ img {
     align-items: center;
     width: 46px;
     height: 48px;
+    outline: none;
     background-color: var(--basic-blue);
 }
 
@@ -630,11 +659,14 @@ img {
 
 .developed a {
     margin-left: 8px;
+    outline: none;
 }
 
-.developed a:hover path {
+.developed a:hover path,
+.developed a:focus path {
     fill: var(--basic-blue);
 }
+
 .developed a:active path {
     fill: var(--htmlacademy-logo);
 }

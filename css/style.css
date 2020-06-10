@@ -464,8 +464,12 @@ input[type="checkbox"].visually-hidden {
     font-weight: 700;
     line-height: 26px;
     text-transform: uppercase;
-    border: none;
+    border: solid 2px var(--basic-extra-light);
     background-color: var(--basic-extra-light);
+}
+
+.form-input::placeholder {
+    color: var(--basic-black);
 }
 
 .form-input:hover {
@@ -740,6 +744,11 @@ input[type="checkbox"].visually-hidden {
     border-radius: 5px;
 }
 
+.filter-input:focus + .check-box {
+    box-shadow: 0px 0px 1px 2px var(--basic-blue);
+}
+
+
 .filter-input:checked + .check-box {
     background: url('../img/cheked.svg') no-repeat left center;
 }
@@ -787,6 +796,8 @@ input[type="checkbox"].visually-hidden {
 .price-label input {
     width: 100%;
     height: 100%;
+    padding: 0;
+    padding-left: 5px;
     text-transform: uppercase;
     color: var(--basic-white);
     background-color: transparent;
@@ -829,6 +840,14 @@ input[type="checkbox"].visually-hidden {
 }
 .toggle-max {
     right: 45px;
+}
+
+.toggle:hover,
+.togglw:focus {
+    width: 5px;
+    height: 5px;
+    border-width: 9px;
+    margin-top: -12px;
 }
 
 .filter-button {
@@ -1052,7 +1071,7 @@ input[type="checkbox"].visually-hidden {
 .rating-stars {
     position: relative;
     display: inline-block;
-    width: 95px;
+    width: 110px;
     height: 17px;
     overflow: hidden;
 }
@@ -1062,23 +1081,19 @@ input[type="checkbox"].visually-hidden {
     position: absolute;
     top: 0;
     right: 0;
-    width: 19px;
+    width: 100%;
     height: 17px;
-    background: url('../img/star.svg') center right;
+    background-repeat: no-repeat;
+    background-position: center right;
 }
 
-.rating-stars--one-starts:after {
-    width: 20px;
-}
+
 .rating-stars--two-starts:after {
-    width: 39px;
+    background-image: url('../img/two-stars.svg');
 }
 .rating-stars--three-starts:after {
-    width: 59px;
+    background-image: url('../img/three-stars.svg');
 }
-.rating-stars--four-starts:after {
-    width: 78px;    
-}
-.rating-stars--five-starts:after {
-    width: 99px;    
+.rating-stars--four-starts:after { 
+    background-image: url('../img/four-stars.svg');
 }

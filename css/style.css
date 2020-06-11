@@ -858,6 +858,11 @@ input[type="checkbox"].visually-hidden {
     border-radius: 2px;
 }
 
+.filter-button:hover {
+    background-color: var(--basic-white);
+    color: var(--basic-black);
+}
+
 
 
 

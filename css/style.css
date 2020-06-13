@@ -730,6 +730,7 @@ input[type="checkbox"].visually-hidden {
 .filter {
     background-color: var(--neutral-bg);
     background: url('../img/filter-background.jpg') no-repeat center;
+    background-size: cover;
 }
 
 .filter-form {
@@ -945,6 +946,10 @@ input[type="checkbox"].visually-hidden {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.sort ul:first-of-type {
+    flex-wrap: wrap;
 }
 
 .sort ul:last-child {

@@ -40,6 +40,7 @@
 
     --htmlacademy-logo: #BDBBBC;
     --toggle-bg: #ABABAB;
+    --map-bg: #BCD9BC;
     --rating-icon-bg: #CACACA;
 
 
@@ -84,6 +85,7 @@ img {
 
 .page {
     display: grid;
+    grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
     grid-template-rows: min-content 1fr min-content;
     width: 1200px;
     min-height: 100%; 
@@ -101,7 +103,8 @@ input[type="checkbox"].visually-hidden {
     border: 0;
     padding: 0;
     white-space: nowrap;
-    clip-path: inset(100%);
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -405,6 +408,11 @@ input[type="checkbox"].visually-hidden {
 
 .search-form {
     position: relative;
+    display: none;
+}
+
+.search-form.shown {
+    display: block;
 }
 
 .form {
@@ -415,6 +423,18 @@ input[type="checkbox"].visually-hidden {
     margin-right: calc(-568px / 2);
     background-color: var(--basic-white);
 }
+
+.form-error {
+    animation-name: shake;
+    animation-duration: 0.6s;
+}
+
+@keyframes shake{
+    0%, 100%                {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+    20%, 40%, 60%, 80%      {transform: translateX(10px);}
+}
+
 
 .form-date {
     display: flex;
@@ -468,6 +488,22 @@ input[type="checkbox"].visually-hidden {
     background-color: var(--basic-extra-light);
 }
 
+.form-input::-webkit-input-placeholder {
+    color: var(--basic-black);
+}
+
+.form-input::-moz-placeholder {
+    color: var(--basic-black);
+}
+
+.form-input:-ms-input-placeholder {
+    color: var(--basic-black);
+}
+
+.form-input::-ms-input-placeholder {
+    color: var(--basic-black);
+}
+
 .form-input::placeholder {
     color: var(--basic-black);
 }
@@ -502,7 +538,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .passenger-number .form-input {
-    width: 100%;
+    width: calc(100% - 39px * 2);
     padding: 0;
     text-align: center;
 }
@@ -564,6 +600,13 @@ input[type="checkbox"].visually-hidden {
 
 .map {
     line-height: 0;
+    min-height: 594px;
+    background: var(--map-bg) url('../img/sedona-map.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.map iframe {
+    border: none;
 }
 
 
@@ -696,6 +739,7 @@ input[type="checkbox"].visually-hidden {
 
 .filter-fieldset {
     display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     color: var(--basic-white);
@@ -726,7 +770,10 @@ input[type="checkbox"].visually-hidden {
     padding-left: 40px;  
     line-height: 21px;
     cursor: pointer;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 .filter-label:last-child {
@@ -794,8 +841,9 @@ input[type="checkbox"].visually-hidden {
 }
 
 .price-label input {
-    width: 100%;
+    width: 0;
     height: 100%;
+    flex-grow: 1;
     padding: 0;
     padding-left: 5px;
     text-transform: uppercase;

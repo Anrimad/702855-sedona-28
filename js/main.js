@@ -34,9 +34,7 @@ form.addEventListener('submit', function(evt){
     if(!dateArrival.value || !dateLeaving.value || !adult.value || !kids.value) {
         evt.preventDefault();
         form.classList.remove('form-error');
-        form.offsetWidth += 'some string';
-        console.log(form.offsetWidth);
-        
+        form.offsetWidth = form.offsetWidth;
         form.classList.add('form-error');
     } else {
         if(isStorageSupport) {

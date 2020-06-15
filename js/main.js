@@ -2,6 +2,8 @@ var searchButton = document.querySelector('.search-button');
 var searchForm = document.querySelector('.search-form');
 var form = document.querySelector('.form');
 
+searchForm.classList.add('hide')
+
 var dateArrival = document.querySelector('[name=date-arrival]');
 var dateLeaving = document.querySelector('[name=date-leaving]');
 var adult = document.querySelector('[name=adult]');
@@ -19,8 +21,8 @@ try {
 
 searchButton.addEventListener('click', function(evt) {
     evt.preventDefault();
-    searchForm.classList.add('shown');
-
+    searchForm.classList.toggle('shown');
+    form.classList.remove('form-error');
     if(storage) {
         dateArrival.value = storage;
         dateLeaving.focus();

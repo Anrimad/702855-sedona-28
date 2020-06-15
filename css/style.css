@@ -409,6 +409,9 @@ input[type="checkbox"].visually-hidden {
 
 .search-form {
     position: relative;
+}
+
+.search-form.hide {
     display: none;
 }
 

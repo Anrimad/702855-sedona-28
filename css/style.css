@@ -309,6 +309,7 @@ input[type="checkbox"].visually-hidden {
 .content-sublist {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -874,7 +875,6 @@ input[type="checkbox"].visually-hidden {
 
 .price-label input {
     width: 0;
-    height: 100%;
     flex-grow: 1;
     padding: 0;
     padding-left: 5px;

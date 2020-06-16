@@ -3,8 +3,8 @@
     font-style: normal;
     font-weight: 400;
     src: local('PT Sans'), local('PTSans-Regular'),
-        url('fonts/pt-sans-v11-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
-        url('fonts/pt-sans-v11-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
 }
 
 @font-face {
@@ -12,8 +12,8 @@
     font-style: normal;
     font-weight: 700;
     src: local('PT Sans Bold'), local('PTSans-Bold'),
-        url('fonts/pt-sans-v11-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
-        url('fonts/pt-sans-v11-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/pt-sans-v11-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/pt-sans-v11-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
 }
 
 
@@ -170,7 +170,7 @@ input[type="checkbox"].visually-hidden {
     opacity: 0.3;
 }
 
-.nav-menu a.active-link {
+.nav-menu .active-link {
     color: var(--basic-brown);
 }
 
@@ -704,7 +704,7 @@ input[type="checkbox"].visually-hidden {
     list-style: none;
 }
 
-.social-elem a{
+.social-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -714,16 +714,16 @@ input[type="checkbox"].visually-hidden {
     background-color: var(--basic-blue);
 }
 
-.social-elem a:hover,
-.social-elem a:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--neutral-light-blue);
 }
 
-.social-elem a:active {
+.social-link:active {
     background-color: var(--neutral-dark-blue);
 }
 
-.social-elem a:active path {
+.social-link:active path {
     opacity: 0.3;
 }
 
@@ -741,17 +741,17 @@ input[type="checkbox"].visually-hidden {
     align-items: center;
 }
 
-.developed a {
+.developed-link {
     margin-left: 8px;
     outline: none;
 }
 
-.developed a:hover path,
-.developed a:focus path {
+.developed-link:hover path,
+.developed-link:focus path {
     fill: var(--basic-blue);
 }
 
-.developed a:active path {
+.developed-link:active path {
     fill: var(--htmlacademy-logo);
 }
 

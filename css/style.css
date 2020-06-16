@@ -907,6 +907,7 @@ input[type="checkbox"].visually-hidden {
     width: 4px;
     height: 4px;
     margin-top: -10px;
+    padding: 0;
     border: 8px solid var(--basic-white);
     background-color: var(--toggle-bg);
     border-radius: 50%;
